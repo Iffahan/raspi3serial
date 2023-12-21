@@ -1,6 +1,6 @@
 import serial
 
-ser = serial.Serial('/dev/ttyS0', 9600)  # Use the appropriate serial port
+ser = serial.Serial('/dev/ttyAMA0', 9600)  
 
 while True:
     if ser.in_waiting > 0:
