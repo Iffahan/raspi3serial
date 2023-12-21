@@ -1,6 +1,6 @@
-import serial
+import SerialTest
 
-ser = serial.Serial('/dev/ttyS0', 9600)  # Use the appropriate serial port
+ser = SerialTest.Serial('/dev/ttyS0', 9600)  # Use the appropriate serial port
 
 while True:
     if ser.in_waiting > 0:
